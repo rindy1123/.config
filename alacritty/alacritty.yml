@@ -27,8 +27,6 @@ colors:
     cyan: "#56b6c2"
     white: "#ECEFF4"
 
-background_opacity: 0.9
-
 font:
   normal:
     family: "Hack Nerd Font"
@@ -54,6 +52,8 @@ font:
     y: 0
 
 window:
+  decorations: None
+  opacity: 0.75
   padding:
     x: 2
     y: 2
@@ -79,3 +79,8 @@ live_config_reload: true
 key_bindings:
   - { key: N, mods: Control, action: SpawnNewInstance }
   - { key: V, mods: Control, action: ToggleViMode }
+
+shell:
+  program: /usr/local/bin/fish
+  args:
+    - --login
